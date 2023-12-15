@@ -32,8 +32,7 @@ img{
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   justify-content: space-between;
-  
-  max-height: 1200px;
+  height: 1000px;
   width: 800px;
   border-radius: 10px;
   text-align: center;
@@ -45,7 +44,23 @@ img{
   border-style: 1px  solid black ;
   color: white;
   padding:15px;
+ 
+  animation: minhaAnimacao 2s ease-in-out 1s infinite alternate;
 }
+
+@keyframes minhaAnimacao {
+  from {
+    /*movimenta na horizontal da esquerda pra direita*/
+      transform: translateX(-10px);
+     /* anima e roda transform: rotate3d(1, 1, 1, 0deg);*/
+  }
+  to {
+      transform: translateX(10px);
+     /* anima e roda transform: rotate3d(5, 2, 3, 360deg);*/
+  }
+}
+
+
 
 .header{
   background-color: var(--blue);
@@ -75,6 +90,17 @@ input{
   padding: 10px;
   border-radius: 5px;
   font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:hover,button:hover{
+  text-decoration: underline;
+  text-shadow: #949494;
+  font-size: 2em;
+}
+
+input:focus{
+  outline: 3px solid rgb(7, 122, 126);
 }
 
 button{
@@ -87,7 +113,9 @@ button{
 button:hover{
   cursor: pointer;
   transition: .4s;
-  background-color: var(--gray);
+  background-color: var(--dark);
+  color: var(--white);
+  
 }
 
 #history{
@@ -121,6 +149,12 @@ button:hover{
 .my-message{
   text-align: right;
   background-color: var(--gray);
+}
+
+.response-message{
+  text-align: left;
+  background-color: var(--lightblue);
+  
 }
 
 .response-message{
