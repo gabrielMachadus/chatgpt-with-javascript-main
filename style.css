@@ -1,0 +1,130 @@
+:root{
+  --dark: #0c0c0c;
+  --white: #fff;
+  --blue: #077aaf;
+  --gray: #949494;
+  --lightblue: #0786ad;
+}
+
+body{
+  background-color: var(--gray);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+img{
+  margin-top: 1em;
+  margin-bottom: -60px;
+  height: 50%;
+}
+
+.box-questions{
+  background-color: var(--white);
+  background-image: url(fundo.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  
+  max-height: 1200px;
+  width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#fundo-msg{
+  background: #949494;
+  border-radius: 8px;
+  border-style: 1px  solid black ;
+  color: white;
+  padding:15px;
+}
+
+.header{
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 10px 10px 0 0;
+  font-size: 1.4rem;
+}
+
+.footer{
+  background-color: var(--blue);
+  border-radius: 0 0 10px 10px;
+  padding: 1rem;
+}
+
+a{
+  text-decoration: none;
+  font-style: italic;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--white);
+}
+
+input{
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button:hover{
+  cursor: pointer;
+  transition: .4s;
+  background-color: var(--gray);
+}
+
+#history{
+  padding: 1rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  background-image: urlf(".\fundo.png")";
+}
+
+.box-my-message{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-response-message{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.my-message,
+.response-message{
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  margin: 0;
+}
+
+.my-message{
+  text-align: right;
+  background-color: var(--gray);
+}
+
+.response-message{
+  text-align: left;
+  background-color: var(--lightblue);
+}
+
