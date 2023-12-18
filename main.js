@@ -32,11 +32,9 @@ function sendMessage() {
     }
     message.style.border = 'none';
 
-    var status = document.getElementById('status');
+    
     var btnSubmit = document.getElementById('btn-submit');
 
-    status.style.display = 'block';
-    status.innerHTML = 'Carregando...';
     btnSubmit.disabled = true;
     btnSubmit.style.cursor = 'not-allowed';
     message.disabled = true;
@@ -49,11 +47,11 @@ function sendMessage() {
 
         if (respostaPreDefinida) {
             // Se houver uma resposta pré-definida, exibir no histórico
-            status.style.display = 'none';
+           
             showHistory(message.value, respostaPreDefinida[1]);
         } else {
             // Se não houver correspondência, exibir mensagem padrão
-            status.style.display = 'none';
+           
             showHistory(message.value, ' <p>Desculpe, eu não entendi a pergunta.</p>');
         }
     } finally {

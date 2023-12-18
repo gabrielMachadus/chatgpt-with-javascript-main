@@ -5,23 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <title>CHAT DIFERPAN</title>
-  
 </head>
-<body  onload="bemVindoAoSistema()">
-  <div class="box-questions">
-    <div class="header">
-      <img src="https://cdn.diferpan.com.br/arquivos/publico/logo/Rodap__-Maior-350x150.png"/>
-    </div>
-    <p id="status"></p>
-    <div id="history">
-      <!-- Aqui vai o chat gerado conforme as respostas -->
-    </div>
-    <div class="footer">
-      <input type="text" id="message-input" placeholder="Digite aqui a sua dúvida." onkeydown="verificaEnterPressionado(event)" required>
-      <button class="btn-submit" id="btn-submit" onclick="sendMessage()">Perguntar</button>
+<body onload="bemVindoAoSistema()">
+  <div class="container-fluid">
+  <div class="">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://cdn.diferpan.com.br/arquivos/publico/logo/Rodap__-Maior-350x150.png" class="img-fluid" alt="DIFERPAN Logo">
+      </div>
+      <div class="card-body">
+        <div id="history">
+          <!-- Aqui vai o chat gerado conforme as respostas -->
+        </div>
+      </div>
+      <div class="card-footer fixed-bottom">
+        <div class="input-group">
+          <input type="text" id="message-input" class="form-control" placeholder="Digite aqui a sua dúvida." onkeydown="verificaEnterPressionado(event)" required>
+          <div class="input-group-append">
+            <button class="btn btn-primary" id="btn-submit" onclick="sendMessage()">Perguntar</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
