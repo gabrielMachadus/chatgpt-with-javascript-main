@@ -132,6 +132,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
   height: 100%;
   background-image: urlf(".\fundo.png")";
 }
@@ -151,6 +152,7 @@ button:hover{
   padding: 1rem;
   border-radius: 10px;
   color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0;
 }
 
@@ -159,14 +161,13 @@ button:hover{
   background-color: var(--gray);
 }
 
-.response-message{
-  text-align: left;
-  background-color: var(--lightblue);
-  
-}
 
 .response-message{
   text-align: left;
   background-color: var(--lightblue);
 }
 
+
+.card-header{
+  background-color: #077aaf;
+}
